@@ -1,0 +1,36 @@
+{
+    "name": "yutawhee/sparda-cms-account-module",
+    "type": "laravel-module",
+    "description": "",
+    "require": {
+        "yutawhee/sparda-cms-core-module": "dev-master"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gdevilbat\\SpardaCMS\\Modules\\Account\\Providers\\AccountServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Gdevilbat\\SpardaCMS\\Modules\\Account\\": ""
+        },
+        "exclude-from-classmap": [
+            "/preprocessor/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+          "Gdevilbat\\SpardaCMS\\Modules\\Account\\Tests\\": "Tests"
+        }
+    },
+    "archive": {
+        "exclude": ["/Tests", "/preprocessor"]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
